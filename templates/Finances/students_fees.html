@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{{college_name}}</title>
+    <link rel="stylesheet" href="{% static 'css_files/finance_student_fees.css' %}">
+</head>
+
+<body>
+
+
+
+
+    <div class="container2">
+
+        <h1 id="inside_header">Check Fees</h1>
+
+        <div class="container3">
+
+            <form method="POST">
+
+
+                {{fee_form.as_table}}
+
+                <button>Check</button>
+                
+                {% csrf_token %}
+            </form>
+
+            {% if fee_to_be_paid == "Not Found" %}
+
+
+                <h3 style="margin-left: 120px;margin-top: 6px">Student Not Found</h3>
+                
+            {% endif %}
+
+
+
+        </div>
+
+
+
+    </div>
+
+    <br>
+    <br>
+
+
+
+{% if fee_to_be_paid != "Not Found" and  fee_to_be_paid != "Not Known" %}
+
+    <div class="fee_payment">
+
+        <h3 style="color: red;">The Student name is {{name}}</h3>
+        <h3>The amount of fee to be paid is {{fee_to_be_paid}} R.S</h3>
+
+        <a href="http://localhost:8000/ad/fee-paid/{{Roll_no}}"><button> pay {{fee_to_be_paid}}</button></a>
+
+    </div>
+
+{% endif %}
+
+
+
+
+</body>
+
+</html>

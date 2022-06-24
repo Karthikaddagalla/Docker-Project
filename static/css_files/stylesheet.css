@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(to right, #ff6e7f, #bfe9ff);;
+}
+
+
+.header{
+    color: white;
+    width: 100%;
+    border: 2px solid black;
+    background-color: black;
+    height:80px;
+    font-family: "Times New Roman", Times, serif;
+     
+}
+
+.header img{
+    color: red;
+    float: left;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    margin: 2px;
+
+
+     
+}
+
+.header .h2container{
+    float: left;
+    margin-left: 500px;
+    
+}
+
+
+
+.container1{
+    border: 2px solid lightgreen;
+    width: 400px;
+    height:200px;
+    margin-left: 200px;
+    float: left;
+    background-color: white;
+}
+
+.container1 #inside_header{
+    color:red;
+    text-align: center;
+    border-bottom: 1px solid yellow;
+    background-color: yellow;
+    margin-bottom: 25px;
+}
+
+.container1 a button{
+    background-color: orange;
+    margin-left: 140px;
+    margin-bottom: 25px;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.container1 a button:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.container2{
+    border: 2px solid lightgreen;
+    width: 400px;
+    height:250px;
+    margin-left: 200px;
+    float: left;
+    background-color: white;
+}
+
+.container2 #inside_header{
+    color:red;
+    text-align: center;
+    border-bottom: 1px solid yellow;
+    background-color: yellow;
+    margin-bottom: 25px;
+}
+
+.container2 a button{
+    background-color: orange;
+    margin-left: 138px;
+    margin-bottom: 25px;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.container2 a button:hover{
+    background-color: red;
+    cursor: pointer;
+}
+

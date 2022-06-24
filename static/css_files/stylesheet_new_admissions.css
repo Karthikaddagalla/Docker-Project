@@ -1,0 +1,57 @@
+*{
+
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+
+body{
+
+    background-image: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+}
+
+
+.container2{
+    border: 2px solid yellowgreen;
+    width: 400px;
+    height:480px;
+    margin-left: 550px;
+    float: left;
+    background-color: white;
+    padding: 0px;
+    border-radius: 8px;
+}
+
+.container3{
+
+    margin-left:5px
+}
+
+
+
+.container2 #inside_header{
+    color:red;
+    text-align: center;
+    border-bottom: 1px solid yellow;
+    background-color: lightgoldenrodyellow;
+    margin-bottom: 25px;
+    
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.container2 a button{
+    background-color: orange;
+    margin-left: 138px;
+    margin-bottom: 25px;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.container2 a button:hover{
+    background-color: red;
+    cursor: pointer;
+}
+

@@ -1,0 +1,46 @@
+version : "3"
+
+services:
+  mysql_server:
+    image: mysql
+
+    environment:
+      - MYSQL_DATABASE=my_database
+      
+      - MYSQL_ROOT_PASSWORD=Karthik@789
+      - MYSQL_PORT=3306
+      - MYSQL_ROOT_HOST=%
+      
+   
+
+    expose:
+      - "3306"
+      
+    volumes:
+      - ./db:/var/lib/mysql
+    
+    restart: unless-stopped
+
+
+  django:
+    build:
+      dockerfile: Dockerfile
+      context: ./
+
+    
+      
+    entrypoint: ["./wait.sh"]
+    
+    ports:
+      - "8000:8000"
+      
+    
+    restart: on-failure
+    
+      
+    depends_on:
+      - mysql_server
+      
+    command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+      
+    
