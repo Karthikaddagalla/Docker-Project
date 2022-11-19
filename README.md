@@ -1,4 +1,4 @@
-# My-Docker-Project
+# Docker Project
 
 These Repository contains the files of the docker project I had done. Here I had created a django application which is an simple school admissions website. After that I had dockerized that application using docker.
 
